@@ -4,6 +4,7 @@ import           Data.Binary
 import qualified Data.ByteString.Lazy as L
 import           Hexdump
 import           OLE
+import           OLE.HeaderBlock
 import           System.IO
 
 main :: IO ()
