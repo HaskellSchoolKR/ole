@@ -5,7 +5,6 @@ module OLE where
 import           Data.Binary
 import           Data.Binary.Get
 import qualified Data.ByteString as B
-import           Data.Word
 
 data OLE = OLE HeaderBlock DataBlock
 
