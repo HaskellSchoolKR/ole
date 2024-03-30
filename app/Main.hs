@@ -14,5 +14,5 @@ main = do
   print (decode header :: HeaderBlock)
 
   handle <- openFile "sample.hwp" ReadMode
-  bytes <- readBlock handle (-1)
+  bytes <- readBlock handle ((-1) :: Int)
   putStrLn (prettyHex bytes)

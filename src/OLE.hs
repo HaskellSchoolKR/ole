@@ -8,8 +8,8 @@ data OLE = OLE HeaderBlock DataBlock
 
 data DataBlock
 
-readBlock :: Handle -> Integer -> IO B.ByteString
+readBlock :: Integral a => Handle -> a -> IO B.ByteString
 readBlock handle blockNum = do
   let pos = (blockNum + 1) * 0x200
-  hSeek handle AbsoluteSeek pos
+  hSeek handle AbsoluteSeek (fromIntegral pos)
   B.hGet handle 0x200
