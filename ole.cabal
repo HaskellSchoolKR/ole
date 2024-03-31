@@ -12,6 +12,7 @@ library
   import: warnings
   exposed-modules:
     OLE
+    OLE.BBAT
     OLE.HeaderBlock
 
   build-depends:
